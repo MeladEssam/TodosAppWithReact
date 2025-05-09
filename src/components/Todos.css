@@ -1,0 +1,129 @@
+.todos-title,
+.todos-list-title {
+  color: rgb(242 255 112);
+  color: #29193a;
+}
+input {
+  margin-bottom: 10px !important;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 8px 15px;
+  /* border-color: transparent; */
+  font-size: 18px !important;
+  /* transition-duration: 0.4s; */
+  color: #29193a;
+  transition-duration: 0.4s;
+}
+input:focus {
+  /* border: 2px solid transparent; */
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, #283360, #29193a) border-box;
+  transform: scale(1.04);
+}
+.add-btn {
+  background: linear-gradient(135deg, #283360, #29193a) !important;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f2ff6d;
+  transition-duration: 0.4s;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px #131b478a, -1px -1px 6px #0e0e2475;
+}
+.add-btn:hover {
+  color: #fff;
+}
+
+/*todo card */
+.card-todo {
+  background: linear-gradient(135deg, #283360, #29193a) !important;
+  /* box-shadow: 1px 1px 6px #131b478a, -1px -1px 6px #0e0e2475; */
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition-duration: 0.4s;
+  animation: fadeIn 0.5s ease-in;
+}
+.card-todo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+
+  background: linear-gradient(135deg, #181f3d, #1b1026) !important;
+}
+.card-todo .todo-title {
+  text-align: center;
+  color: #edfb61;
+  /* color: #78ff7e; */
+  font-size: 25px;
+  font-weight: bold;
+}
+.card-todo .todo-desc {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 0 !important;
+}
+
+.todo-actions button {
+  background: transparent;
+  border: none;
+  border: 2px solid #673ab7;
+  border: 2px solid #472583d4;
+  color: #fff !important;
+  /* min-width: 100px; */
+  font-size: 22px;
+  flex-grow: 1;
+}
+/* .todo-actions .delete-btn {
+  color: #ff5252;
+}
+.todo-actions .edit-btn {
+  color: #48f950;
+} */
+.delete-all,
+.complete-all {
+  /* max-width: 300px; */
+  min-width: 220px;
+  max-width: 300px;
+
+  color: #db1608;
+  font-weight: bold;
+  background: linear-gradient(135deg, #283360, #29193a) !important;
+  padding: 10px;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+.delete-all:hover,
+.complete-all:hover {
+  color: #fff;
+}
+
+@media (max-width: 430px) {
+  .delete-all,
+  .complete-all {
+    font-size: 20px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

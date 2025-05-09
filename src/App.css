@@ -1,0 +1,15 @@
+.side-bar {
+  height: calc(100vh - 76px);
+  background: #232834;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 76px;
+}
+.main-content {
+  background-color: #1a1e29;
+  color: #fff;
+}
