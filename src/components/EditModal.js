@@ -30,6 +30,7 @@ function EditModal() {
         id: selectedTodo.id,
         title: titleInput.current.value,
         description: descriptionInput.current.value,
+        status: selectedTodo.status,
       };
       console.log(newDetails);
       dispatch(UpdateTask(newDetails));
