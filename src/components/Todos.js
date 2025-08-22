@@ -121,6 +121,7 @@ function Todos() {
             id: newId,
             title: titleInput.current.value,
             description: descInput.current.value,
+            status: false, // must add this property
           })
         );
 
