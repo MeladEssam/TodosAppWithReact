@@ -174,7 +174,7 @@ function Todos() {
   return (
     <div className="todos">
       <div className="container py-5">
-        <h1 className="todos-title text-center fw-bold mb-4 fs-1">Todos App</h1>
+        <h1 className="todos-title text-center fw-bold mb-4 fs-1">To-Do App</h1>
         <div className="row d-flex justify-content-center">
           <div className="col-md-8 col-lg-6 col-xl-5">
             <form
@@ -211,7 +211,7 @@ function Todos() {
 
         {todosList.length && (
           <h2 className="todos-list-title mt-5  text-center fw-bold fs-2">
-            My Tasks
+            Task List
           </h2>
         )}
 
